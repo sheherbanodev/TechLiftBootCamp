@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html > 
+  
+  
+
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./utility/profile.js"></script>
+    
 </head>
-<body onload="apiCall()">
+<body onload="apiCall()" style="background-image: linear-gradient(to right, rgb(148, 128, 128) , rgb(108, 143, 194)); height: 100%;width: 100%;">
 
-<h2 style="text-align:center">User Profile Card</h2>
+<!--<h2 style="text-align:center">User Profile Card</h2>-->
 
-<div class="card">
-  <img id="img" src="" alt="John" style="width:100%">
-  <h1 id="name" ></h1>
-  <p id="bio" class="title">CEO & Founder, Example</p>
+  <div > 
+    <div class="card" style="text-align: center; margin-top: 10%;">
+      <div class="card-up" style="background-image: linear-gradient(to left, rgb(236, 230, 230) , aqua); ">
+        <img id="img" src="" class="rounded-circle " style="width: 120px; text-align: center;margin-top: 60px;border: 3px solid #72276E;;"></div>
+      <div style="margin-top: 30%;"> 
+        <h3 id="name" ></h3>
+      <p id="bio" class="title"></p>
+      <p id="location" class="location"> </p>
+      
+      
+      </div>
+      <div style="margin-top: 10%;">
+        <button type="button" onclick="openProfile()">View Profile</button>
+      </div>
+      
+    </div>
+    
+  </div>
   
-  <button type="button" onclick="openProfile()">View Profile</button>
-</div>
+
+
 
 </body>
 </html>

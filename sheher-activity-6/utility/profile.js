@@ -8,6 +8,7 @@ async function apiCall() {
   document.getElementById("name").innerText = value.name;
   document.getElementById("img").src = value.avatar_url;
   document.getElementById("bio").innerText = value.bio;
+  document.getElementById("location").innerText=value.location
 }
 
 function openProfile() {
