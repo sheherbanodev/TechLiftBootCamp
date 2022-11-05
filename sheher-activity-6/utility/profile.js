@@ -2,7 +2,7 @@
 var userObj = null;
 
 async function apiCall() {
-  let response = await fetch("https://api.github.com/users/sheherbanodev");
+  let response = await fetch("https://api.github.com/users/junaidsaleem");
   let value = await response.json();
 
     userObj = value;
