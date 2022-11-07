@@ -10,31 +10,31 @@
     <script src="./utility/profile.js"></script>
     
 </head>
-<body onload="apiCall()" style="background-image: linear-gradient(to right, rgb(148, 128, 128) , rgb(108, 143, 194)); height: 100%;width: 100%;">
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-sm bg-dark">
 
-<!--<h2 style="text-align:center">User Profile Card</h2>-->
-
-  <div > 
-    <div class="card" style="text-align: center; margin-top: 10%;">
-      <div class="card-up" style="background-image: linear-gradient(to left, rgb(236, 230, 230) , aqua); ">
-        <img id="img" src="" class="rounded-circle " style="width: 120px; text-align: center;margin-top: 60px;border: 3px solid #72276E;;"></div>
-      <div style="margin-top: 30%;"> 
-        <h3 id="name" ></h3>
-      <p id="bio" class="title"></p>
-      <p id="location" class="location"> </p>
-      
-      
-      </div>
-      <div style="margin-top: 10%;">
-        <button type="button" onclick="openProfile()">View Profile</button>
-      </div>
-      
+    <div class="container-fluid"style="border:5px"> 
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li  class="nav-item">
+          <a id="Usrbtnclr" class="nav-link" onclick="userbtn()" >Users</a>
+        </li>
+        <li class="nav-item">
+          <a id="postbtnclr"class="nav-link" onclick="postbtn()">Posts</a>
+        </li>
+      </ul>
     </div>
-    
-  </div>
   
+  </nav>
+  <body onload="apiCall(),postCall()" style="background-image: linear-gradient(to right, rgb(148, 128, 128) , rgb(108, 143, 194)); height: 100%;width: 100%;">
+  
+  <!--<h2 style="text-align:center">User Profile Card</h2>-->
+  
+   <div id="parent" class="row"></div>
+   <div id="Post-parent" class="row"></div>
+  
+  
+  </body>
+</div>
 
-
-
-</body>
 </html>

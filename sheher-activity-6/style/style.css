@@ -12,7 +12,7 @@
     font-size: 18px;
   }
   
-  button {
+  .button {
     margin-bottom: 20px;
     border-radius: 50px;
     outline: 10;
@@ -41,4 +41,8 @@
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     } 
+    .active{
+      background-color: cadetblue;
+      border: #6d2969;
+    }
       
