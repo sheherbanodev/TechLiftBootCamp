@@ -45,4 +45,16 @@
       background-color: cadetblue;
       border: #6d2969;
     }
+    .table-head{
+     background-color: rgba(0, 211, 11, 0.904);
+     color: white;
+    
+    }
+    .main{
+      margin-top: 8%;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 10px;
+     
+    }
       
